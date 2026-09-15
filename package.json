@@ -1,0 +1,34 @@
+{
+  "name": "isogate-genesis",
+  "version": "1.0.0",
+  "description": "Standalone public Solidity contracts and synthetic tests for Isogate Genesis.",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --network hardhatMainnet test/genesis/genesis.ts",
+    "check": "pnpm run compile && pnpm run test && pnpm run scripts:test",
+    "scripts:test": "tsx --test scripts/*.test.ts",
+    "format:check": "prettier --check '**/*.{sol,ts,json,md,yml}'",
+    "prepare-verification": "tsx scripts/prepare-verification.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-node-test-runner": "3.1.0",
+    "@nomicfoundation/hardhat-viem": "3.0.9",
+    "@openzeppelin/contracts": "5.6.1",
+    "@uniswap/v4-core": "1.0.2",
+    "@uniswap/v4-periphery": "1.0.3",
+    "hardhat": "3.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "prettier": "3.6.2",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3"
+  }
+}

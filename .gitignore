@@ -1,0 +1,5 @@
+.hardhat/
+node_modules/
+*.tsbuildinfo
+*.log
+verification/local/

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "genesisVersion": "v2",
+  "network": "Robinhood Chain mainnet",
+  "chainId": 4663,
+  "rpcUrl": "https://rpc.mainnet.chain.robinhood.com/",
+  "explorerUrl": "https://robinhoodchain.blockscout.com",
+  "dependencies": {
+    "poolManager": "0x8366a39CC670B4001A1121B8F6A443A643e40951",
+    "positionManager": "0x58daec3116aae6D93017bAAea7749052E8a04fA7",
+    "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+    "weth": "0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73"
+  },
+  "contracts": {
+    "registry": "0xB946ad99b17d741ABFCBCAec85F5a896a02C62fC",
+    "factory": "0x100D6f949c1C6751799EB510765Bcd7a3e65834A",
+    "coordinator": "0xf3c2CAe988356112a9584389DDb6bc7bf3258c52"
+  },
+  "transactions": {
+    "registry": {
+      "hash": "0xbb7e91e64ae762cc3b4c18c124b1a7bf7547dd0386f49d9c40c81ca4d9057744",
+      "blockNumber": "62141907",
+      "status": "success"
+    },
+    "factory": {
+      "hash": "0xcb14da70c670b4aca0c7bc7303863beae243e895b9de2c913b6c794fc76b91b1",
+      "blockNumber": "62141920",
+      "status": "success"
+    },
+    "coordinator": {
+      "hash": "0x0cc1e7d89cb9ef53b8629a48ebede01b7c08ea6c5387758903b5ed9356b4509a",
+      "blockNumber": "62141933",
+      "status": "success"
+    },
+    "configureLaunchCoordinator": {
+      "hash": "0x89f93d8eb99615cdb05968d9f1b2430f54b4dc77cfb67e9287621d0f9ea66e87",
+      "blockNumber": "62141942",
+      "status": "success"
+    }
+  },
+  "sourceVerification": {
+    "provider": "Sourcify",
+    "recordNote": "Exact-match values copied from the public deployment record; independently re-check before relying on this manifest.",
+    "contracts": {
+      "registry": {
+        "matchId": "50624344",
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "verifiedAt": "2026-09-13T17:43:13Z"
+      },
+      "factory": {
+        "matchId": "50624364",
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "verifiedAt": "2026-09-13T17:43:20Z"
+      },
+      "coordinator": {
+        "matchId": "50624399",
+        "creationMatch": "exact_match",
+        "runtimeMatch": "exact_match",
+        "verifiedAt": "2026-09-13T17:43:29Z"
+      }
+    }
+  }
+}
